@@ -1,0 +1,19 @@
+{
+  "name": "music-collection",
+  "version": "1.0.0",
+  "description": "Primary",
+  "main": "index.js",
+  "engines": {
+    "node": "8.9.4"
+  },
+  "scripts": {
+    "test": "node test.js",
+    "start": "node index.js"
+  },
+  "author": "Jeff Maxim",
+  "license": "ISC",
+  "dependencies": {
+    "@jeffthemaximum/prompt": "^1.0.0",
+    "@jeffthemaximum/test": "^1.0.0"
+  }
+}
