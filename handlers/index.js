@@ -15,4 +15,4 @@ const handle = (command, data) => {
   }
 }
 
-module.exports = handle
+module.exports = { handle }

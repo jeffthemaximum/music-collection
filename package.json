@@ -7,7 +7,7 @@
     "node": "8.9.4"
   },
   "scripts": {
-    "test": "node test.js",
+    "test": "jest",
     "start": "node index.js"
   },
   "author": "Jeff Maxim",
@@ -15,5 +15,8 @@
   "dependencies": {
     "@jeffthemaximum/prompt": "^1.0.0",
     "@jeffthemaximum/test": "^1.0.0"
+  },
+  "devDependencies": {
+    "jest": "^24.8.0"
   }
 }
