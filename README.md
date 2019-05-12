@@ -35,3 +35,9 @@
   - I try to handle errors in the function in `validators/`, by catching known error conditions.
   - each of my individial functions (such as `handlers/handleAdd.test.js`, for example) do not include any error handling.
   - I would like to add error handling to all those individual functions, too, so that they don't depend on perfect inputs.
+
+- Find a better location for `helpers/handleLoop.js`
+    - I broke the logic in `handleLoop` out into it's own function for testing.
+    - When moving it to it's own file, I got into a circular import situation.
+    - This happened because the `handleLoop` required the logic in `validators/`, but the logic in `validator/` also required `helpers`
+    - I think we some refactoring I can make those two files now depend on eachother, so I can import them and test them without having curcular imports.
