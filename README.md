@@ -41,3 +41,7 @@
     - When moving it to it's own file, I got into a circular import situation.
     - This happened because the `handleLoop` required the logic in `validators/`, but the logic in `validator/` also required `helpers`
     - I think we some refactoring I can make those two files now depend on eachother, so I can import them and test them without having curcular imports.
+- Catch some more edge cases
+    - There's probably at least a few conditions that my current implementation does not detect or handle gracefully.
+    - For example, if a user enters double quotes in the body of the album title or artist name, such as `add "This is "an album"" by "Someone Madeup"`, my implementation won't handle that.
+    - Future work could involve finding (and writing tests for) these edge cases.
